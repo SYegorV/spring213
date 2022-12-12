@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AppConfig {
     @Bean(name="helloworld")
-    @Scope("singleton")
+    @Scope
     public HelloWorld getHelloWorld() {
         HelloWorld helloWorld = new HelloWorld();
         helloWorld.setMessage("Hello World!");
